@@ -1,0 +1,14 @@
+@id-f-feature-a
+Feature: Fature A
+
+  @id-s-ler-a-ok
+  Scenario: Ler A corretamente
+    Given I have an account file with contents zzz
+    When I parse the file
+    Then the first account number is "123456789"
+    
+  @id-s-ler-a-erro
+  Scenario: Ler A com erro
+    Given I have an account file with contents zzz
+    When I parse the file
+    Then the first account number is "123456789"
